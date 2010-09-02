@@ -1,0 +1,10 @@
+RailscastsDownloader
+====================
+
+Introduction
+I'm pretty sure that if you are interested in this small ruby script is because you like Ryan Bates's rails screencasts. I'm one of you, so I decided one day to code this script in order to download all the .mov files to watch them using my laptop when I'm offline.
+
+Usage
+The usage of this script is very simple. The first you use it you have to rename the file EmptyRailscastsDownloader.db to RailscastsDownloader.db. This file contains the sqlite3 database to download only the episodes you don't have already downloaded. After that, the only thing you have to do is run the script (it fetchs the rss content, gets the .mov files and for every one checks if it have not been downloaded yet and download it.
+
+
