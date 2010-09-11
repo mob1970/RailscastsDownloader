@@ -166,5 +166,19 @@ class RailscastsDownloader
 
 end
 
+case(ARGV.length)
+	when 0
+		restart = true
+	when 1 
+		restart = (ARGV[0] == true) ? true : false
+	else
+		# Error
+		puts('Error in parameters. Syntax')
+		puts('	RailscastsDownloader [true|false]')
+		puts('')
+		Process.exit!(1)
+end
+
+
 rcd = RailscastsDownloader.new()
-rcd.download_casts(true)
+rcd.download_casts(restart)
